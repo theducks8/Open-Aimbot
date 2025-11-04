@@ -38,6 +38,10 @@
 
 --! Debugger
 
+local function load()
+print("loadeded")
+end
+
 local DEBUG = false
 
 if DEBUG then
@@ -2497,4 +2501,7 @@ local AimbotLoop; AimbotLoop = RunService[UISettings.RenderingMode]:Connect(func
             end
         end
     end
+
 end)
+
+pcall(load)
